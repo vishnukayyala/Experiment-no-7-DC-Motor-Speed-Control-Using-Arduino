@@ -1,10 +1,12 @@
-![image](https://github.com/vasanthkumarch/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/36288975/739cc470-48c8-4873-a730-6319b4afc602)
-###  DATE: 
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT:
 # Experiment-no-6-DC-Motor-Speed-Control-Using-Arduino
+
+NAME : VISHNU KM
+
+DEPARTMENT : AI/ML
+
+ROLL NOM : 212223240185
+
 ### AIM : To control the speed and the direction of a DC motor using L293D driver ic( H- bridge)
 
 ### Components Required:
@@ -33,17 +35,42 @@ As shown in the circuit diagram we need only 3 Arduino terminal pins, pin 8 is f
 
 ### PROGRAM 
 
+```
+int enable=6;
+int input1=3;
+int input2=4;
+
+void setup()
+{
+  pinMode(enable, OUTPUT);
+    pinMode(input1, OUTPUT);
+    pinMode(input2, OUTPUT);
+   
+}
+
+void loop()
+{
+  analogWrite(enable,255);
+  delay(1000);
+  digitalWrite(input1, HIGH);
+  digitalWrite(input2, LOW);
+  delay(5000);
+  digitalWrite(input1, LOW);
+  digitalWrite(input2, HIGH);
+  delay(5000);
+}
+```
+
 ### OUTPUT
+
+![EXP 6 CIRCUIT](https://github.com/vishnukayyala/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/151489368/fe77377c-559f-4338-821d-9ab3f621b4ad)
+![EXP 6 CIRCUIT 2](https://github.com/vishnukayyala/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/151489368/a1ad8f50-bfbe-4367-ad20-5e43d8f0d78c)
 
 ### GRAPH AND TABULATION 
 
-
-![image](https://github.com/vasanthkumarch/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/36288975/07e9b28e-9a5b-47bd-a023-3c27fe00fb2b)
-
-
-![image](https://github.com/vasanthkumarch/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/36288975/67ed339f-8011-4acc-b793-e5d4930639c7)
-
+![EXP 6 TABLE](https://github.com/vishnukayyala/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/151489368/884d05e0-dd74-4b65-9866-87a5d54da393)
+![EXP 6 GRAPH](https://github.com/vishnukayyala/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/151489368/026634ff-a3c1-436b-a699-44bcd209ef88)
 
 
 ### RESULTS AND DISCUSSION 
-
+TUS WE HAVE TO CONTROL THE  SPPED AND DIRECTION OF A DC MOTOR USING L293D DRIVER H BRIDGE
